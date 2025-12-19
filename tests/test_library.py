@@ -79,7 +79,7 @@ def test_user_cannot_borrow_more_than_three_books():
     user.borrow(books[3])
 
     assert len(user.get_borrowed_books()) == 3
-    assert books[3].is_available() is True
+    assert books[3].is_available() is True #правильно
 
 
 def test_library_add_and_find_book():
